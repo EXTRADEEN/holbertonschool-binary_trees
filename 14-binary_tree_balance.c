@@ -13,7 +13,8 @@ int binary_tree_balance(const binary_tree_t *tree)
 		return (0);
 	else
 	{
-		factor = (-1 + binary_tree_balance(tree->left) - binary_tree_balance(tree->right));
+		factor = (-1 + binary_tree_balance(tree->left)
+			- binary_tree_balance(tree->right));
 	}
 	return (factor);
 }
